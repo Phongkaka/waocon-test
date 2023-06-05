@@ -1,0 +1,102 @@
+/* case study */
+.case-study {
+  h2 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 100;
+    color: #1F3655;
+    &::before {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 6px;
+      background: #A3D826;
+      border-radius: 10px;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 22px;
+    line-height: 28px;
+    color: #15285850;
+    margin-top: 40px;
+    margin-bottom: 74px;
+  }
+  .main-case-study {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 270px;
+    min-height: 1130px;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 93%;
+      height: 100%;
+      background-color: #EEF2F5;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+    .text-slider {
+      padding-bottom: 50px;
+      span {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        line-height: 16px;
+        color: #585A5A;
+        padding-bottom: 10px;
+      }
+    }
+    .btn-action {
+      display: block;
+      background: transparent;
+      width: 318px;
+      height: 70px;
+      background: radial-gradient(100% 2063.76% at 0% 50%, #003E8F 0%, #2C60A5 100%);
+      margin: 0 auto;
+      margin-top: 60px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.slider {
+  width: 100%;
+  .swiper {
+    overflow: unset;
+    position: relative;
+    .swiper-pagination {
+      bottom: -42px;
+    }
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #223856;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 1;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet-active {
+    position: relative;
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 1px solid #142C4B;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+    }
+  }
+}
